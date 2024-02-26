@@ -1,0 +1,152 @@
+ .full-width {
+  width: 100%;
+  background: #DAA06D;
+}
+.wrap {
+  width: 100%;
+  max-width: 24em;
+   text-align: center;
+  margin: 0 auto;
+  padding: 0.25em 0.625em;
+}
+
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+
+}
+
+.Centered {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  color:  white;
+  transform: translate(-50%, -50%);
+}
+
+
+
+
+
+.Shanku {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color:  white;
+  transform: translate(-50%, -50%);
+}
+
+
+.btn {
+  cursor: pointer;
+  display: inline-block;
+  background: none;
+  border: 1px #000 solid;
+  border-radius: 50px;
+  padding: 7px 16px;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none;
+}
+
+.btn-light-outline {
+  border-color: #fff;
+  color: #fff;
+}
+
+.grid-col-2 {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-reversed :first-child {
+  order: 2;
+}
+
+.box {
+  margin-bottom: 30px;
+}
+
+.box-inner {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.box-text {
+  max-width: 500px;
+  text-align: center;
+  justify-self: center;
+  padding: 20px 0;
+  margin: 0 auto;
+}
+
+.card1 {
+  width: 100%;
+  max-width: 290px;
+  height: 70px;
+  background: #353535;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  backdrop-filter: blur(10px);
+  transition: 0.5s ease-in-out;
+}
+
+.card1:hover {
+  cursor: pointer;
+  transform: scale(1.05);
+}
+
+.img1 {
+  width: 50px;
+  height: 50px;
+  margin-left: 10px;
+  border-radius: 10px;
+  background: linear-gradient(#d7cfcf, #9198e5);
+}
+
+.card1:hover > .img1 {
+  transition: 0.5s ease-in-out;
+  background: linear-gradient(#9198e5, #712020);
+}
+
+.textBox1 {
+  width: calc(100% - 90px);
+  margin-left: 10px;
+  color: white;
+  font-family: 'Poppins' sans-serif;
+}
+
+.textContent1 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.span {
+  font-size: 10px;
+}
+
+
+.p {
+  font-size: 12px;
+  font-weight: lighter;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,123 @@
+.card{ 
+      display: grid; 
+      grid-template-columns: 1fr 1 fr 1 fr 1fr;}
+.card {
+  position: relative;
+  display: inline-block;
+  width: 20em;
+  height: 23 em;
+  box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  align-items: center;
+  justify-content: absolute;
+  background: #fff;
+  padding: 0.5em;
+  padding-bottom: 3.4em;
+
+}
+
+.card::after {
+  content: "Add to Cart";
+  padding-top: 1.25em;
+  padding-left: 1.25em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #00AC7C;
+  color: #fff;
+  height: 2.5em;
+  width: 90%;
+  transition: all 80ms;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+}
+
+.card .title {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.card .price {
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.card:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.card:active {
+  transform: scale(0.98);
+}
+
+.card:active::after {
+  content: "Added !";
+  height: 3.125em;
+}
+
+.text {
+  max-width: 55px;
+}
+
+.image {
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  place-items: center;
+  float: left;
+ 
+}
+
+
+
+
+
+.add {
+      width: 100%;
+      font-size: 30px
+      background-color: rgba(0, 0, 0, 0.6);
+      color: white;
+      position: absolute;
+      left: 0px;
+      bottom: -40px;
+      opacity: 0;
+      transition: 1.5s;
+
+
+}
+
+.card:hover .add{
+  top: 0px;
+  opacity: 1;
+}
+
+.menu .card{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+
+.flex-parent {
+  display: flex;
+}
+
+.jc-center {
+  justify-content: center;
+}
+
+button.margin-right {
+  margin-right: 20px;
+}
